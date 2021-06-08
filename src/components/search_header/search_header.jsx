@@ -18,15 +18,19 @@ const SearchHeader = ({ search }) => {
     const onClick = () => {
         handleSearch(inputRef.current.value)
     }
-
-
     return (
         <header className={styles.header}>
             <a href="./" className={styles.logo}>
                 <img className={styles.img} src='./images/logo.png' alt="logo" ></img>
                 <h1 className={styles.title}>Youtube</h1>
             </a>
-            <input className={styles.input} ref={inputRef} onKeyPress={onKeyPress} type="text" placeholder="Search..." />
+            <input
+                className={styles.input}
+                ref={inputRef}
+                onKeyPress={onKeyPress}
+                type="text"
+                placeholder="Search..."
+            />
             <button className={styles.button} type="submit" onClick={onClick}>
                 <img className={styles.buttonImg} src="./images/search.png" alert="search"></img>
             </button>
