@@ -11,9 +11,4 @@
 .list{
     flex: 1 1 30%;
 }
-/* media file */
-@media screen and (max-width:768px) { 
-    .container{
-        flex-direction: column;
-    }
- }
+
